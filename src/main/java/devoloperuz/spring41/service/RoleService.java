@@ -10,4 +10,12 @@ import devoloperuz.spring41.rest.response.Response;
  */
 public interface RoleService {
     Response save(RoleDto dto);
+
+    Response findAll();
+
+    Response findById(Long id);
+
+    Response edit(Long id, RoleDto dto);
+
+    Response delete(Long id);
 }
